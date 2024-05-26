@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter-Transfer</title>
+    
+</head>
+
+<body>
+    <header><h2>Inter-Transfer of Amounts</h2>
+        </header>
+
+    <main class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li class="parent">
+                    <a href="#">Accounts</a>
+                    <ul class="submenu">
+                        <li><a href="#">Third-Party Payment Maintenance</a></li>
+                        <li><a href="#">Open Virtual Debit Card</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="3.2 Loans_Home.php">Loans</a>
+                    <ul class="submenu">
+                        <li><a href="3.2.1 Apply_Loans.php">Apply for Loan</a></li>
+                        <li><a href="3.2.2 SignUp_Loans.php">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="3.1 Credit_Card Home.php">Credit Cards</a>
+                    <ul class="submenu">
+                        <li><a href="3.1.1 Apply_Credit_Card.php">Apply for Credit Card</a></li>
+                        <li><a href="3.1.2 SignUp_Credit_Card.php">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#">Global Links</a>
+                    <ul class="submenu">
+                        <li><a href="#">International Payments</a></li>
+                        <li><a href="#">Currency Exchange Rates</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#">FX Services</a>
+                    <ul class="submenu">
+                        <li><a href="#">Foreign Exchange Rates</a></li>
+                        <li><a href="#">Currency Conversion Calculator</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#">Transfer Money</a>
+                    <ul class="submenu">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">SC Pay</a></li>
+                        <li><a href="#">To a Local Account</a></li>
+                        <li><a href="#">To Overseas</a></li>
+                        <li><a href="#">Online Transfer History</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="inter-transfer">
+            <h3> Funds Transfer between Own Accounts </h3>
+
+            <form method="post" action="3. Inter_transfer1.php" >
+                <div class="from-account">
+                  <b>From Account</b> &nbsp;
+                  <select id="from-account-select" name="from-account">
+                    <option value="account1">Account 1 (Clover 0000)</option>
+                    <option value="account2">Account 2 (Clover 1111)</option>
+                  </select>
+                </div>
+            
+                <div class="to-account">
+                  <b>To Account</b>&nbsp;
+                  <select id="to-account-select" name="to-account">
+                    <option value="account1">Account 1 (Clover 0000)</option>
+                    <option value="account2">Account 2 (Clover 1111)</option>
+                  </select>
+                </div>
+
+               
+                <style>
+                    .from-account select {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 5px;
+                    width: 450px; 
+                    font-size: 14px; 
+}
+                    .to-account select {
+                     width: 450px;
+                     padding: 5px; 
+                     font-size: 14px; 
+}
+
+                </style>
+
+                <div class="currency-amount">
+                    <b>Currency and Amount:</b>&nbsp;
+                    <select id="currency" name="currency">
+                         <option value="usd">USD</option>
+                         <option value="eur">EUR</option>
+                        </select>
+
+                        <style>
+                        .currency-amount select
+                     {
+                            
+                            width: 80px;
+                            padding: 4px;
+                            font-size: 14px;
+                        }
+
+                        
+                    </style>
+
+                    <br></br>
+                    
+                    <input type="number" id="amount" name="amount" min="1" step="1" required>
+                    <span class="error-message"></span> </div>
+
+                    <style>
+                        .currency-amount input[type="number"] {
+                            float: middle;
+                            width: 230px; 
+                            padding: 5px;
+                            font-size: 14px;
+                            }
+                    </style>
+
+                <div class="transfer_date">
+                    <b>When to Transfer?</b>&nbsp;    (DD/MM/YYYY): &nbsp; 
+                    <input type="date" id="transfer-date" name="transfer_date" required>
+                    <span class="error-message"></span>
+                    <br></br>
+                    <label for="repeatTransfer">Repeat This Transfer? &nbsp; &nbsp;
+                      <input type="checkbox" id="repeat-transfer" name="repeat_transfer">
+                    </label>
+              
+                </div>
+
+                <style>
+
+              .repeat_transfer {
+              font-family: Arial, sans-serif;
+              background-color: #f6f5f4;
+              display: inline-block;
+            margin-bottom: 10px;
+            margin-left: 5px;
+              }
+
+            .repeat_transfer input[type="checkbox"] {
+             vertical-align: middle;
+             position: absolute;
+             right: 50px;
+             padding: 5px; 
+            font-size: 14px; 
+            margin-top: 5px;
+            }
+
+    .transfer_date input[type="date"] {
+    width: 170px; 
+    padding: 4px; 
+    font-size: 14px; 
+    }
+
+                </style>
+
+                <div class="buttons">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <a type="button" class="back-button" href="2. Trans_His.php" >Back</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a  type="submit" class="next-button" >Next</a> 
+                </div>
+            </form>
+
+            
+            <p class="note" ></p><b>Note:</b>
+            <p class="notes">Funds Transfers between Accounts within Strandard Chartered Bank will be processed immediately.
+                <br> Scheluded transfer will be performed on the date you have specified.
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        </footer>
+</body>
+
+<style>
+    /* Global styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+header{
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 0px;
+  text-align: center;
+  width: 1700px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar */
+nav.sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #3baf33;
+}
+
+nav li.parent a {
+  cursor: pointer;
+}
+
+nav li.parent ul {
+  display: none;
+}
+
+nav li.parent:hover ul {
+  display: block;
+}
+
+nav li.parent ul li {
+  margin-left: 20px;
+}
+
+/* Inter-transfer section */
+section.inter-transfer {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; /* Adjust for desired layout */
+}
+
+.from-account,
+.to-account,
+.currency-amount,
+.transfer-date {
+  margin-bottom: 20px;
+  width: 100%; /* Adjust for layout */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  display: none; /* Initially hidden */
+}
+
+.buttons {
+  display: flex;
+  margin-top: 20px;
+  position: absolute;
+  top: 420px;
+}
+.back-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.next-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+p.note {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+p.notes {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  nav.sidebar {
+    width: 100%;
+    order: 2; /* Move below main content on smaller screens */
+  }
+
+  section.inter-transfer {
+    order: 1; /* Ensure content appears above sidebar on smaller screens */
+  }
+
+  .from-account,
+  .to-account,
+  .currency-amount,
+  .transfer-date {
+    width: 75%; /* Ensure elements span full width on small screens */
+  }
+}
+
+</style>
+
+</html>

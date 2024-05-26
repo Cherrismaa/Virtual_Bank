@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Apply</title>
+</head>
+<body>
+   
+  <section class="apply">
+    <div class="container">
+      <div class="apply-box">
+        <h2>Enter Details</h2>
+        <form action="3.2.1 Apply_Loans1.php" method="post">
+
+          <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+          <input type="tel" id="phone" name="phone" placeholder="+91 Enter Mobile Number" required>
+
+          <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+          <select id="loan-types">
+            <option value="personal-loan">Personal loan</option>
+            <option value="home-loan">Home loan</option>
+            <option value="car-loan">Car loan</option>
+            <option value="business-loan">Business loan</option>
+            <option value="student-loan">Student loan</option>
+          </select>
+
+          <select id="surety">
+                <option value="collateral">Collateral</option>
+                <option value="non-collateral">Non-Collateral</option>
+          </select>
+
+
+          <input type="submit" value="Apply">
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+<style>
+
+body{
+background-image: url('https://img.freepik.com/premium-photo/loan-application-form-white-background_476612-5601.jpg');
+background-size: 800px 800px; /* Adjust the background image size */
+background-repeat: no-repeat;
+}
+
+.apply.container {
+  display: flex;
+  justify-content: center;
+}
+
+.apply-box {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 4 10 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  position: absolute;
+  top: 125px;
+  right: 225px;
+  height: 370px;
+  border:2px solid  #000000; ;
+}
+
+.apply h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.apply form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apply label {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.apply input[type="email"],
+.apply input[type="text"],
+.apply input[type="tel"]{
+  width: 65%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+#loan-types {
+  width: 249px;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #5b5959;
+  top:290px;
+}
+
+#surety {
+  width: 249px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #5b5959;
+  top: 300px;
+  
+}
+
+#loan-types:focus, #surety:focus {
+  outline: none;
+  border-color: #000000; /* Change border color on focus */
+}
+
+.apply input[type="submit"] {
+  background-color: #ee0028;
+  color: #ffffff;
+  font-size: 17px;
+  cursor: pointer;
+  width: 40%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  top:333px;
+  position: absolute;
+}
+
+.apply input[type="submit"]:hover {
+  background-color: #ac001d;
+}
+
+
+</style>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+</head>
+<body>
+  <section class="login">
+    <div class="container">
+      <div class="login-box">
+        <h2>Enter Credentials</h2>
+        <form action="3.2.2 SignUp_Loans.php" method="post">
+
+          <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+          <input type="password" id="password" name="password"  placeholder="Enter Password" required>
+
+          <input type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+<style>
+
+body{
+background-image: url('https://st3.depositphotos.com/1022914/37505/i/600/depositphotos_375055858-stock-photo-online-loan-text-and-flag.jpg');
+background-size: 1550px 800px; /* Adjust the background image size */
+background-repeat: no-repeat;
+}
+
+.login .container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-box {
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 4 10 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  position: absolute;
+  top: 70px;
+  right: 550px;
+  height: 230px;
+  border:1.5px solid  #000000;
+  background-color: #ffffff;
+}
+
+.login h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login label {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.login input[type="email"]
+{
+  width: 65%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.login input[type="password"]{
+  width: 65%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #373737;
+}
+
+.login input[type="password"]:focus {
+  outline: none;
+  
+}
+
+.login input[type="submit"] {
+  background-color: #ee0028;
+  color: #ffffff;
+  font-size: 17px;
+  cursor: pointer;
+  width: 40%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  top:180px;
+  position: absolute;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #ac001d;
+}
+
+
+</style>
+

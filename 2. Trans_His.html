@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    
+</head>
+
+<body>
+    <header>
+        
+        <h1>Transaction History</h1>
+    </header>
+
+    <form method="post" action="2.Trans_His1.php">
+
+    <section class="search-export">
+        <div class="search-invoice">
+            <label for="invoice-id">Invoice ID /No.</label>
+            <input type="text" id="invoice-id" name="invoice_id" placeholder="Search by invoice">
+           
+        </div>
+        <div class="export-options">
+            <h3>Export</h3>
+        
+        </style>
+            <a href="path/to/your/file.csv" download class="export-button" data-format="csv">Download(.csv)</a>
+            <a href="path/to/your/file.xlx" download class="export-button" data-format="xlsx">Download(.xlx)</a>
+        </div>
+    </section>
+
+    <main>
+        <section class="filters">
+            <div class="date-range">
+                <label for="from-date">From:</label>
+                <input type="date" id="from-date" name="from_date">
+                &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                <label for="to-date">To:</label>
+                <input type="date" id="to-date" name="to_date">
+
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            
+            <div class ="dropdown-filters">
+
+                <label for="type">Type:</label>
+                <select id="type" name="type">
+                    <option value="">All</option>
+                    <option value="debit">Debit</option>
+                    <option value="credit">Credit</option>
+                    <option value="transfer">Transfer</option>
+                </select>
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
+
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option value="">All</option>
+                    <option value="pending">Pending</option>
+                    <option value="Paid">Completed</option>
+                    <option value="failed">Failed</option>
+                </select>
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+
+                <label for="users">Users:</label>
+                <select id="users" name="users">
+                    <option value="">All</option>
+                    
+                </select>
+
+            
+            &nbsp;  &nbsp;  &nbsp;  &nbsp;  
+            <button class="apply-button">Apply</button>
+            </div>
+        </section>
+
+
+        <section class="transaction-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>DATE & TIME</th>
+                        <th>INVOICE NO</th>
+                        <th>TYPE</th>
+                        <th>STATUS</th>
+                        <th>AMOUNT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
+
+</form>
+
+
+    <style>
+        .transaction-table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.custom-table th, .custom-table td {
+    padding: 1px; /* Adjust as needed */
+    border: 1px solid #ddd; /* Border for demonstration */
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+}
+
+
+    /* Global styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5; /* Adjust for your background color */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Filters section */
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.date-range,
+.dropdown-filters {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="date"],
+input[type="text"],
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px; /* Adjust as needed */
+}
+
+.apply-button {
+    background-color: #57b21a;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Search and Export section */
+.search-export {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-invoice {
+    display: flex;
+    align-items: center;
+}
+
+.export-options {
+    text-align: right;
+}
+
+.export-button {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Transaction table */
+.transaction-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .filters,
+    .search-export {
+        margin-bottom: 20px;
+    }
+}
+
+</style>
+

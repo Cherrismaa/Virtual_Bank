@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Loans</title>
+    
+</head>
+<body>
+    <section id="customer-support">
+        <h1>CONTACT US</h1>
+        <ul>
+            <li><strong>Contact Information:</strong> +91 01234 56789 | <a href="mailto:support@virtualbank.com">support@virtualbank.com</a></li>
+            <li><strong>Operating Hours:</strong> Monday - Friday: 9am - 5pm IST</li>
+            <li><strong>Privacy Policy:</strong> Your privacy is important to us. Read our policy <a href="privacy-policy.html">here</a>.</li>
+            <li><strong>Customer Feedback:</strong> We value your feedback! Fill out our <a href="feedback.html">feedback form</a>.</li>
+            <li><strong>Security:</strong> Your security is our top priority. Learn more about our security measures <a href="security.html">here</a>.</li>
+            <li><strong>Social Media:</strong> Follow us on social media for quick news updates.</li>
+        </ul>
+        <!-- Contact Bar -->
+        <div class="contact-bar">
+            <div class="contact-item" onclick="copyToClipboard('+91 12345 67890')">Contact</div>
+            <div class="contact-item" onclick="copyToClipboard('support@virtualbank.com')">Email</div>
+            <div class="contact-item">Follow Us!</div>
+        </div>
+    </section>
+
+    <script>
+        function copyToClipboard(text) {
+            const input = document.createElement('textarea');
+            input.value = text;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            alert('Copied to clipboard: ' + text);
+        }
+    </script>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        background-image: url('https://st.depositphotos.com/25985398/51584/i/600/depositphotos_515849982-stock-photo-hand-businessman-sit-desks-calculate.jpg');
+        background-repeat: no-repeat;
+        background-size: 1600px;
+    }
+
+    #customer-support {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 15%;
+        left:48%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        color: #900000;
+    }    
+
+    ul {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    li {
+        margin-bottom: 10px;
+        width: calc(99.99% - 30px);
+        text-align: justify;
+    }
+
+    li strong {
+        color: #ab1f1f;
+    }
+
+    a {
+        color: #166401;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Additional style for contact bar */
+    .contact-bar {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-item {
+        background-color: #900000;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .contact-item:hover {
+        background-color: #900000;
+        cursor: pointer;
+    }
+</style>
+
+</body>
+</html>

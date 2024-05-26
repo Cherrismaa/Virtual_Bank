@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KYC APPLICATION FORM for Non-Individuals</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <u>KNOW YOUR CLIENT (KYC) APPLICATION FORM </u></h1><br></br>
+</head>
+<body>
+  
+    <b>Please fill this form in ENGLISH and in BLOCK LETTERS.</b>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+    <strong><i>For Non- Individuals </i> &nbsp;&nbsp;</strong><label for="photograph">Photograph:</label>
+    <img id="Preview" src="#" alt="Preview" width="100" height="150">
+    <input type="file" id="photographUpload" name="photograph" accept="image/*"></p>
+
+  <form method="post" action="Kyc_Non-Individuals1.php">
+
+      <h4 style="background-color: lightgray;">A. IDENTITY DETAILS</h4>
+
+      <label for="name"><b>1. Name of the Applicant:</b></label>
+      <input type="text" id="name" name="name" required>
+      <br></br>
+      <label for="2. Date of incorporation"><b>2. Date of incorporation:</b></label>
+      <input type="text" id="2. Date of incorporation" name="Doi" required>
+      <label for="(dd/mm/yyyy)">(dd/mm/yyyy)</label> &nbsp;  &nbsp;
+      <label for="& Place of incorporation: "><b>& Place of incorporation:</b></label>
+      <input type="text" id="& Place of incorporation: " name="Poi " required>
+      <br></br>
+
+      <label for="Date of commencement of business "><b>3. Date of commencement of business:</b></label>
+      <textarea id="residenceAddress" name="date" rows="1" cols="70" required></textarea>
+      <label for="(dd/mm/yyyy)">(dd/mm/yyyy)</label>
+      <br> </br>
+
+      <label for="4. a. PAN:"><b>4. a. PAN: </b></label>
+      <input type="text" id="4. a. PAN:" name="Pan" required> &nbsp;  &nbsp;
+
+      <label for="4. b. Registration No. (e.g. CIN): "><b>b. Registration No. (e.g. CIN): </b></label>
+      <input type="text" id="Registration No. (e.g. CIN): " name="RegistrationNo" required>
+      <br></br>
+
+      <label for="Status"><b>5. Status (please tick any one): </b></label><br>
+
+      <input type="checkbox" id="privateLimited" name="status" value="Private Limited Co.">
+      <label for="privateLimited">Private Limited Co.</label> &nbsp;  &nbsp;
+      
+      <input type="checkbox" id="publicLimited" name="status" value="Public Limited Co">
+      <label for="publicLimited">Public Ltd. Co.</label> &nbsp;  &nbsp;
+      
+      <input type="checkbox" id="bodyCorporate" name="status" value="Body Corporate">
+      <label for="bodyCorporate">Body Corporate</label> &nbsp;  &nbsp;
+
+      <input type="checkbox" id="partnership" name="status" value="Partnership">
+    <label for="partnership">Partnership</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="trust" name="status" value="Trust">
+    <label for="trust">Trust</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="charities" name="status" value="Charities">
+    <label for="charities">Charities</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="ngos" name="status" value="NGOs">
+    <label for="ngos">NGOs</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="fi" name="status" value="FI">
+    <label for="fi">FI</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="fii" name="status" value="FII">
+    <label for="fii">FII</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="huf" name="status" value="HUF">
+    <label for="huf">HUF</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="aop" name="status" value="AOP">
+    <label for="aop">AOP</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="bank" name="status" value="Bank">
+    <label for="bank">Bank</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="governmentBody" name="status" value="Government Body">
+    <label for="governmentBody">Government Body</labe> <br>
+
+    <input type="checkbox" id="nonGovernmentOrg" name="status" value="Non-Government Organization">
+    <label for="nonGovernmentOrg">Non-Government Organization</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="defenseEstablishment" name="status" value="Defense Establishment">
+    <label for="defenseEstablishment">Defense Establishment</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="boi" name="status" value="BOI">
+    <label for="boi">BOI</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="society" name="status" value="Society">
+    <label for="society">Society</label> &nbsp;  &nbsp;
+
+    <input type="checkbox" id="llp" name="status" value="LLP">
+    <label for="llp">LLP</label> &nbsp;  &nbsp;
+  
+    <label for="others">Others (please specify) </label>
+    <input type="text" id="othersSpecify" name="othersSpecify">
+   
+      <h4 style="background-color: lightgray;">B. ADDRESS DETAILS</h4>
+    
+      <label for="residenceAddress"><b>1. Address for correspondence:</b></label>
+      <textarea id="residenceAddress" name="residenceAddress" rows="1" cols="100" required></textarea>
+      <br></br>
+      <label for="city">City/ town/ village:</label>
+      <input type="text" id="city" name="city" required>
+      &nbsp;
+      <label for="pincode">Pin Code:</label>
+      <input type="text" id="pincode" name="pincode" required>
+      &nbsp;
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required>
+      &nbsp;
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" required>
+      <br></br>
+
+      <label for="contactDetails"><b>2. Contact Details:</b></label> &nbsp;
+
+      <label for="Tel">Tel.(Off.):</label>
+      <input type="text" id="Tel" name="Tel" required>
+      &nbsp;
+      <label for=" Tel. (Res.)"> Tel. (Res.):</label>
+      <input type="text" id=" Tel. (Res.)" name=" Tel_Res" required>
+      &nbsp;
+      <label for="Mobile No.: ">Mobile No.: </label>
+      <input type="text" id="Mobile No.: " name="Mobile_No" required>
+      &nbsp;
+      <label for="Fax">Fax:</label>
+      <input type="text" id="Fax" name="Fax" required>
+      &nbsp;
+      <label for="Email">Email id:</label>
+      <input type="text" id="Email" name="Email" required>
+      <br></br>
+
+      <label for="poa"><b>3. Specify the proof of address submitted for residence address: </b></label> &nbsp;
+      <input type="text" id="poa" name="poa" required>
+      <br></br>
+
+      <label for="Registeredddress"><b>4.Registered Address</b>  (if different from above):</label> &nbsp;
+      <textarea id="RegisteredAddress" name="RegisteredAddress" rows="1" cols="50"></textarea>
+      <br></br>
+
+      <label for="permanentCity">City/town/village:</label> &nbsp;
+      <input type="text" id="permanentCity" name="PCity" required>  &nbsp; 
+
+      <label for="permanentPincode">Pin Code:</label> &nbsp;
+      <input type="text" id="permanentPincode" name="PPincode" required>  &nbsp; 
+      
+      <label for="permanentState">State:</label>
+      <input type="text" id="permanentState" name="PState" required>  &nbsp; 
+      
+      <label for="permanentCountry">Country:</label>
+      <input type="text" id="permanentCountry" name="PCountry" required>
+      <br></br>
+      
+      <h4 style="background-color: lightgray;">C. OTHER DETAILS</h4>
+
+      <label for="NamePan"><b>1. Name, PAN, residential address and photographs of Promoters/Partners/Karta/Trustees and whole time directors:</b></label> <br></br>
+      <textarea id="NamePan" name="NamePan" rows="1" cols="100" required></textarea> <br></br>
+      
+      <label for="DIN"><b>2</b></label> &nbsp;
+      <label for="DIN"><b>a. DIN of whole time directors:</b></label>
+      &nbsp;<textarea id="DIN" name="DIN" rows="1" cols="60" required></textarea> <br>
+
+      &nbsp;&nbsp; <label for="DIN"><b>b. Aadhaar number of Promoters/Partners/Karta:</b></label>
+      &nbsp; <textarea id="Aadhaar" name="Aadhaar" rows="1" cols="60" required></textarea>
+
+      <h4 style="background-color: lightgray;">DECLARATION</h4> 
+    
+
+        <p>I/We hereby declare that the information provided in this form is true and accurate to the best of my knowledge and belief and I undertake to
+            inform you of any changes therein, immediately. In case any of the above information is found to be false or untrue or
+            misleading or misrepresenting, I am aware that I may be held liable for it.</p>
+        
+        <label for="Sign">_________________________________________</label><br>
+        <label for="Signature of the Applicant"><b>Name & Signature of the Authorised Signatory </b></label>
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;&nbsp;
+        <label for="Date:"><b>Date: </b></label>
+        <label for="(dd/mm/yyyy) ">_____________________<b>(dd/mm/yyyy) </b></label>
+        <br> </br>
+    
+        <h4 style="background-color: lightgray;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          FOR OFFICE USE ONLY</h4>
+
+        <input type="checkbox" name="Originals verified and Self-Attested Document copies received" value="Originals verified and Self-Attested Document copies received" />
+        <label for = "Originals verified and Self-Attested Document copies received"> Originals verified and Self-Attested Document copies received </label>
+        <br></br>
+        
+        <label for="Sign">(________________________________________)</label><br>
+        <label for="Name&Sign"><b>Name & Signature of the Authorised Signatory </b></label>
+        <br></br> <br></br>
+
+        <label for="Date"><b>Date:<b></label> 
+        <label for="Date"><b>................................<b></label>
+        &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
+        <label for="Seal/Stamp of the intermediary">Seal/Stamp of the intermediary</label>
+        
+        <br> </br>  <br> </br>
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp; 
+        <button type="submit"><h4>Submit KYC Application </h4></button>
+    
+  </form> 
+</body>   
+</html> 

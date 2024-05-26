@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Bank Transfer Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header><h1>Another Bank Transfer Page</h1>
+        </header>
+        <p><strong>Please select the type of Transfer</strong></p>
+
+
+    <main class="container">
+        <nav class="sidebar">
+            <ul>
+                <li class="parent">
+                    <a href="#"><h4>Type of Transfer</h4> </a>
+                    <ul class="submenu">
+                        <li><a href="#">IMPS</a></li>
+                        <li><a href="#">NEFT</a></li>
+                        <li><a href="#">RTGS</a></li>
+                        <li><a href="#">REMIT NOW</a></li>
+                        <li><a href="#">PAY LATER</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </main>
+</body>
+
+</html>
+
+<style>
+
+
+body, h1, ul, li, a, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(https://s31898.pcdn.co/wp-content/uploads/2022/06/credit-cards-4-steps-800x430.jpg) no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 18px;
+    font-size: medium;
+    box-shadow: 0 0 3px 3px rgb(255, 255, 255);
+}
+
+p {
+    color: black;
+    position: absolute;
+    top: 200px;
+    left: 155px;
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    position: absolute;
+    top: 5px;
+    left: 250px;
+}
+
+.sidebar {
+    background-color: #fff;
+    color: #000;
+    width: 200px;
+    border-radius: 8px;
+    padding: 1px;
+    position: absolute;
+    top: 200px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #000;
+}
+
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+
+.sidebar ul li.parent a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.sidebar ul li.parent ul.submenu {
+    display: none;
+    text-align: center;
+}
+
+.sidebar ul li.parent:hover ul.submenu {
+    display: block;
+   
+}
+
+.sidebar ul.submenu li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.sidebar ul.submenu li a:hover {
+   background-color: rgb(158, 149, 246);
+}
+</style>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Credit Card</title>
+</head>
+<body>
+  <section class="sign-up">
+    <div class="container">
+      <div class="sign-up-box">
+        <h2>Enter Your Details</h2>
+        <form action="3.1.2 SignUp_Credit_Card1.php" method="post">
+
+          <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+          <input type="tel" id="phone" name="phone" placeholder="+91 Enter Mobile Number" required>
+
+          <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+          <input type="password" id="password" name="password"  placeholder="Enter Password" required>
+
+          <input type="password" id="password" name="password1"  placeholder="Re-enter Password" required>
+
+
+          <input type="submit" value="Sign Up">
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+<style>
+
+body{
+background-image: url('https://st4.depositphotos.com/3433891/21376/i/600/depositphotos_213769412-stock-photo-young-man-holding-credit-card.jpg');
+background-size: 1600px 700px; 
+background-repeat: no-repeat;
+}
+
+.sign-up .container {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-box {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4 10 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  position: absolute;
+  top: 125px;
+  right: 200px;
+  height: 360px;
+  border:1.5px solid  #000000;
+  background-color: #ffffff;
+}
+
+.sign-up h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sign-up form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up label {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.sign-up input[type="email"],
+.sign-up input[type="text"],
+.sign-up input[type="tel"]{
+  width: 65%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.sign-up input[type="password"]{
+  width: 65%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #373737;
+}
+
+.sign-up input[type="password"]:focus {
+  outline: none;
+  
+}
+
+.sign-up input[type="submit"] {
+  background-color: #ee0028;
+  color: #ffffff;
+  font-size: 17px;
+  cursor: pointer;
+  width: 40%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  top:333px;
+  position: absolute;
+}
+
+.sign-up input[type="submit"]:hover {
+  background-color: #ac001d;
+}
+
+
+</style>
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Apply</title>
+</head>
+<body>
+   
+  <section class="apply">
+    <div class="container">
+      <div class="apply-box">
+        <form action="3.1.1 Apply_Credit_Card1.php" method="post">
+
+          <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+          <input type="tel" id="phone" name="phone" placeholder="+91 Enter Mobile Number" required>
+
+          <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+          <select id="cardTypes">
+            <option value="cards">Cards</option>
+            <option value="millennia">First Millennia</option>
+            <option value="swmp">First SWMP</option>
+            <option value="classic">First Classic</option>
+            <option value="power">First Power</option>
+            <option value="wealth">First Wealth</option>
+            <option value="vistara">Club Vistara</option>
+
+          </select>
+
+          <input type="pan" id="pan" name="pan" placeholder="Enter PAN number" required>
+
+          <input type="address" id="address" name="address" placeholder="Enter Address" required>
+
+          <input type="pin" id="pin" name="pin" placeholder="Enter Pin Code" required>
+
+          <input type="submit" value="Apply">
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+<style>
+
+body{
+background-image: url('https://st2.depositphotos.com/1560768/6826/i/600/depositphotos_68260497-stock-photo-apply-for-credit-card.jpg');
+background-size: 800px 700px; 
+background-repeat: no-repeat;
+}
+
+.apply.container {
+  display: flex;
+  justify-content: center;
+}
+
+.apply-box {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 4 10 10px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  position: absolute;
+  top: 130px;
+  left:50%;
+  height: 365px;
+  background-color: #ffffff;
+  border:2px solid  #000000; ;
+}
+
+.apply h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.apply form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apply label {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.apply input[type="email"],
+.apply input[type="text"],
+.apply input[type="tel"],
+.apply input[type="pan"],
+.apply input[type="address"],
+.apply input[type="pin"]
+
+{
+  width: 62%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+#cardTypes {
+  width: 69%;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #333;
+  top:290px;
+  
+}
+
+#cardTypes:focus{
+  outline: none;
+  border-color: #000000; /* Change border color on focus */
+}
+
+.apply input[type="submit"] {
+  background-color: #ee0028;
+  color: #ffffff;
+  font-size: 17px;
+  cursor: pointer;
+  width: 40%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  top:87.2%;
+  position: absolute;
+}
+
+.apply input[type="submit"]:hover {
+  background-color: #ac001d;
+}
+
+
+</style>
+
